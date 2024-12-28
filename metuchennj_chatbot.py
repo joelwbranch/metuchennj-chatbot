@@ -1,12 +1,8 @@
 import pinecone_assistant
 from pinecone import Pinecone
 from pinecone_plugins.assistant.models.chat import Message
-import configparser
 import streamlit as st
 import time
-
-config = configparser.ConfigParser()
-config.read("configs/config.ini")
 
 # Initialize Pinecone assistant
 pc = Pinecone(api_key=st.secrets["pinecone_api_key"])
