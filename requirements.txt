@@ -13,3 +13,4 @@ PyQt5==5.15.10
 PyQtWebEngine==5.15.6
 setuptools==75.1.0
 wheel==0.44.0
+streamlit
