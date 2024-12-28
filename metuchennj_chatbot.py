@@ -9,8 +9,8 @@ config = configparser.ConfigParser()
 config.read("configs/config.ini")
 
 # Initialize Pinecone assistant
-pc = Pinecone(api_key=config["pinecone"]["api_key"])
-assistant_name = config["pinecone"]["assistant_name"]
+pc = Pinecone(api_key=st.secrets["pinecone_api_key"])
+assistant_name = "metuchennj-assistant"
 
 try:
     file_path = "data/metuchen_ordinances.pdf"
